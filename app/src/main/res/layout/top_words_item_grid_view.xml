@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
+    android:layout_width="0dp"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:background="@drawable/shape_grid_item"
+    android:orientation="vertical"
+    android:paddingBottom="8dp">
 
     <ImageView
         android:id="@+id/item_grid_view_bronze_medal_image_view"
         style="@style/StyleMedalImageView"
         android:layout_marginTop="@dimen/top_normal_margin"
         android:tint="@color/colorBronze"
+        app:layout_constraintEnd_toStartOf="@+id/item_grid_view_silver_medal_image_view"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -19,7 +23,9 @@
         android:layout_marginStart="@dimen/left_half_margin"
         android:layout_marginTop="@dimen/top_normal_margin"
         android:tint="@color/colorSilver"
-        app:layout_constraintStart_toEndOf="@id/item_grid_view_bronze_medal_image_view"
+        app:layout_constraintEnd_toStartOf="@+id/item_grid_view_gold_medal_image_view"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/item_grid_view_bronze_medal_image_view"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
@@ -28,7 +34,9 @@
         android:layout_marginStart="@dimen/left_half_margin"
         android:layout_marginTop="@dimen/top_normal_margin"
         android:tint="@color/colorGold"
-        app:layout_constraintStart_toEndOf="@id/item_grid_view_silver_medal_image_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/item_grid_view_silver_medal_image_view"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -36,8 +44,8 @@
         style="@style/StyleTopWordsTextView"
         android:layout_marginTop="@dimen/top_normal_margin"
         android:textColor="@color/colorBlack"
-        app:layout_constraintEnd_toEndOf="@+id/item_grid_view_gold_medal_image_view"
-        app:layout_constraintStart_toStartOf="@+id/item_grid_view_bronze_medal_image_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/item_grid_view_bronze_medal_image_view" />
 
     <ProgressBar
@@ -45,10 +53,12 @@
         style="@android:style/Widget.ProgressBar.Horizontal"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/right_half_margin"
+        android:layout_marginStart="@dimen/left_half_margin"
         android:layout_marginTop="@dimen/top_normal_margin"
         android:max="100"
-        app:layout_constraintEnd_toEndOf="@+id/item_grid_view_gold_medal_image_view"
-        app:layout_constraintStart_toStartOf="@+id/item_grid_view_bronze_medal_image_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/item_grid_view_name_text_view" />
 
     <TextView

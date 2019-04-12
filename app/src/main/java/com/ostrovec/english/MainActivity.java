@@ -15,6 +15,7 @@ import com.ostrovec.english.adapters.TopWordsAdapter;
 import java.util.ArrayList;
 import java.util.List;
 
+import androidx.recyclerview.widget.DividerItemDecoration;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
