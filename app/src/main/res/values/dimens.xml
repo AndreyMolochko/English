@@ -13,6 +13,8 @@
     <dimen name="right_half_margin">8dp</dimen>
     <dimen name="top_normal_margin">8dp</dimen>
     <dimen name="bottom_normal_margin">8dp</dimen>
+    <!--paddings-->
+    <dimen name="bottom_normal_padding">8dp</dimen>
 
     <!--font sizes-->
     <dimen name="title_top_words">14sp</dimen>
