@@ -17,4 +17,22 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+    <style name="StyleMedalImageView">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="srcCompat">@drawable/ic_medal</item>
+    </style>
+
+    <style name="StyleTopWordsTextView">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">@dimen/title_top_words</item>
+    </style>
+
+    <style name="StylePercentsProgressTextView">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
 </resources>
